@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary colors */
+
+  --brand-green: #00856f;
+  --brand-green-hover: #00453a;
+  --brand-green-light: #dce9e2;
+  --brand-green-light-02: #f7f9f9;
+  --brand-beige: #fffaf1;
+
+  /* secondary colors */
+
+  --gray-headline: #061800;
+  --gray-paragraph: #384633;
+  --white: #3e3e3e;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
