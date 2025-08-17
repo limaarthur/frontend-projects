@@ -5,6 +5,7 @@
 }
 
 :root {
+  font-size: 62.5%; /* 1rem = 10px */
   /* primary colors */
 
   --brand-green: #00856f;
@@ -15,9 +16,18 @@
 
   /* secondary colors */
 
+  --headline: #212529;
+  --paragraph: #495057;
+  --white: #3e3e3e;
   --gray-headline: #061800;
   --gray-paragraph: #384633;
-  --white: #3e3e3e;
+}
+
+body {
+  font-family: var(--font-dm-sans);
+  font-size: 1.6rem;
+
+  text-align: center;
 }
 
 a {
