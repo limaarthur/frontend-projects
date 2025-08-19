@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+
+  height: 7.2rem;
+
+  position: fixed; 
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.scroll {
+  background: var(--brand-green);
+  width: 100vw;
+}
+
+nav.scroll svg:nth-child(1) path {
+  fill: #FFFFFF;
+}
+
+nav.scroll svg:nth-child(2) path {
+  stroke: #FFFFFF;
+}
