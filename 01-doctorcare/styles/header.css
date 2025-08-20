@@ -1,6 +1,6 @@
 header::before {
   content: "";
-  width: 100vw;
+  width: 100%;
   height: calc(108rem + 7.2rem);
   background-color: var(--brand-green-light);
   display: block;
