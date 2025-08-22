@@ -24,6 +24,12 @@ nav.scroll svg:nth-child(1) path {
   fill: #FFFFFF;
 }
 
-nav.scroll svg:nth-child(2) path {
+nav.scroll button path {
   stroke: #FFFFFF;
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
