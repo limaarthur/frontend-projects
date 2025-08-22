@@ -1,4 +1,6 @@
 const navigation = document.getElementById('navigation')
+const openMenuButton = document.querySelector('.open-menu')
+const closeMenuButton = document.querySelector('.close-menu')
 
 function onScroll() {
   if (window.scrollY > 0) {
@@ -9,3 +11,16 @@ function onScroll() {
 }
 
 window.addEventListener('scroll', onScroll)
+
+// Funções do menu
+function openMenu() {
+  document.body.classList.add('menu-expanded')
+}
+
+function closeMenu() {
+  document.body.classList.remove('menu-expanded')
+}
+
+// Liga os botões às funções
+openMenuButton.addEventListener('click', openMenu)
+closeMenuButton.addEventListener('click', closeMenu)
