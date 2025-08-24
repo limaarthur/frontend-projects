@@ -24,3 +24,9 @@ function closeMenu() {
 // Liga os botões às funções
 openMenuButton.addEventListener('click', openMenu)
 closeMenuButton.addEventListener('click', closeMenu)
+
+ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+}).reveal('#home');
