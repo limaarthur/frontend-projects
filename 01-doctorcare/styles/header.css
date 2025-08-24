@@ -1,7 +1,7 @@
-header::before {
+#home::before {
   content: "";
   width: 100%;
-  height: calc(108rem + 7.2rem);
+  height: calc(109rem + 7.2rem);
   background-color: var(--brand-green-light);
   display: block;
 
@@ -11,18 +11,18 @@ header::before {
   z-index: -1;
 }
 
-header {
-  margin-top: calc(4.1rem + 7.2rem);
+#home {
+  padding-top: calc(4.1rem + 7.2rem);
 }
 
-header h4 {
+#home h4 {
   font-size: 1.4rem;
   color: var(--brand-green);
 
   margin-bottom: 1.6rem;
 }
 
-header h1 {
+#home h1 {
   font-size: 3.4rem;
   color: var(--headline);
   line-height: 130%;
@@ -30,7 +30,7 @@ header h1 {
   margin-bottom: 2.4rem;
 }
 
- header p {
+#home p {
   font-size: 1.8rem;
   line-height: 150%;
   font-weight: 400;
@@ -39,7 +39,7 @@ header h1 {
   margin-bottom: 3.2rem;
 }
 
-header button {
+#home button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,13 +68,13 @@ header button {
   }
 }
 
-.main-image {
+#home .main-image {
   width: 26.4rem;
   display: block;
   margin-inline: auto;
 }
 
-.stats {
+#home .stats {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,7 +89,7 @@ header button {
   border-radius: 0.6rem;
 }
 
-.stat h3 {
+#home .stat h3 {
   font-size: 4.8rem;
   line-height: 130%;
   color: var(--headline);
@@ -97,7 +97,7 @@ header button {
   margin-bottom: 0.4rem;
 }
 
-.stat p {
+#home .stat p {
   font-size: 1.6rem;
   line-height: 150%;
   color: var(--brand-green);
