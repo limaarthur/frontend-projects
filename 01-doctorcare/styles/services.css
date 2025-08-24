@@ -1,0 +1,41 @@
+#services header h4 {
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+
+  color: var(--brand-green);
+
+  text-transform: uppercase;
+
+  margin-bottom: 1.6rem;
+}
+
+#services header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+
+  color: var(--headline);
+
+  margin-bottom: 6rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3.2rem;
+}
+
+.card {
+  padding: 2.4rem;
+  text-align: left;
+
+  background: #FFFFFF;
+
+  border: 1px solid var(--brand-green-light);
+  border-radius: .6rem;
+}
+
+.card h3 {
+  margin-block: 1.6rem;
+}
