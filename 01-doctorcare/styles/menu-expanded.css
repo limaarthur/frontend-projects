@@ -9,7 +9,7 @@ body.menu-expanded #navigation {
 }
 
 body.menu-expanded > :not(nav) {
-  display: none;
+  visibility: hidden;
 }
 
 .menu,
@@ -43,10 +43,6 @@ body.menu-expanded .menu {
   transition: transform 300ms;
 
   transform: translateY(0);
-}
-
-body.menu-expanded .nav {
-  position: relative;
 }
 
 .menu ul:nth-child(1) {
