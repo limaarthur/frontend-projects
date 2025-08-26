@@ -59,6 +59,44 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%; // Respeita 100% o tamanho da caixa que ele está mantido, o wrapper
+}
+
 section {
   padding-block: 10rem;
+}
+
+section header h1 {
+  font-size: 3.4rem;
+  color: var(--headline);
+  line-height: 130%;
+
+  margin-bottom: 2.4rem;
+}
+
+section header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+
+  color: var(--headline);
+}
+
+section header h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+  color: var(--brand-green);
+
+  text-transform: uppercase;
+
+  margin-bottom: 1.6rem;
+}
+
+section .content p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--paragraph);
 }

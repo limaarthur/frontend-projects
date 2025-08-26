@@ -15,21 +15,6 @@
   padding-top: calc(4.1rem + 7.2rem);
 }
 
-#home h4 {
-  font-size: 1.4rem;
-  color: var(--brand-green);
-
-  margin-bottom: 1.6rem;
-}
-
-#home h1 {
-  font-size: 3.4rem;
-  color: var(--headline);
-  line-height: 130%;
-
-  margin-bottom: 2.4rem;
-}
-
 #home p {
   font-size: 1.8rem;
   line-height: 150%;
