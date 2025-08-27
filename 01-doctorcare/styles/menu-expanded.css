@@ -73,9 +73,16 @@ body.menu-expanded .menu {
 
   background: #FFFFFF;
   border-radius: 4rem;
+  border: 1px solid transparent;
 
   margin-top: 4.8rem;
   margin-bottom: 8rem;
+
+  &:hover {
+    background-color: var(--brand-green);
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+  }
 }
 
 .social-links {

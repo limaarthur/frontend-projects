@@ -1,12 +1,27 @@
 const navigation = document.getElementById('navigation')
 const openMenuButton = document.querySelector('.open-menu')
 const closeMenuButton = document.querySelector('.close-menu')
+const backToTopButton = document.querySelector('#backToTopButton')
 
 function onScroll() {
+  showNavOnScroll()
+  showBackToTopButtonOnScroll()
+}
+
+function showNavOnScroll() {
   if (window.scrollY > 0) {
     navigation.classList.add('scroll')
   } else {
     navigation.classList.remove('scroll')
+  }
+}
+
+function showBackToTopButtonOnScroll() {
+  /* console.log(scrollY) -> Mostra a posição atual do scroll em pixels */
+  if (window.scrollY > 500) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
   }
 }
 
