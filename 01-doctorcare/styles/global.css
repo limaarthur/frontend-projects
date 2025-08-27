@@ -45,7 +45,7 @@ body {
 }
 
 .wrapper {
-  width: 37.5rem;
+  width: min(50rem, 100%); /* Largura máxima de 50rem, mas ocupa 100% em telas menores */
   margin-inline: auto;
   padding-inline: 2.4rem;
 }

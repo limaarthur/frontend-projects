@@ -40,7 +40,7 @@
   justify-content: center;
   gap: 6rem;
 
-  width: 32.7rem;
+  width: 100%; /* Ocupa toda a largura disponível do elemento pai o wrapper */
   padding-block: 4rem;
   margin-inline: auto;
 
