@@ -1,6 +1,16 @@
 @media (min-width: 1024px) {
   /* Geral */
+
+  body {
+    overflow: auto;
+  }
+
   .wrapper {
     width: min(112rem, 100%);
+    display: grid;
+  }
+
+  section {
+    padding-block: 16rem;
   }
 }
