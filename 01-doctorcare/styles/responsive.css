@@ -1,0 +1,6 @@
+@media (min-width: 1024px) {
+  /* Geral */
+  .wrapper {
+    width: min(112rem, 100%);
+  }
+}
