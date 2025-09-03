@@ -19,3 +19,14 @@
   align-items: center;
   gap: .8rem;
 }
+
+@media (min-width: 1024px) {
+  #contact .wrapper {
+    grid-template-columns: 1fr 57.5rem;
+    grid-template-areas: 'A B';
+  }
+  
+  #contact h2 {
+    width: 31rem;
+  }
+}
