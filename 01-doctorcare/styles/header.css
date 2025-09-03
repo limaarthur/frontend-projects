@@ -84,13 +84,8 @@
   }
 
   #home .col-a {
-    grid-area: A;
     text-align: left;
     align-self: center;
-  }
-
-  #home .col-b {
-    grid-area: B;
   }
 
   #home h1 {

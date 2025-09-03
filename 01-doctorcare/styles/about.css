@@ -11,3 +11,19 @@
   margin-top: 2.4rem;
   margin-bottom: 6rem;
 }
+
+@media (min-width: 1024px) {
+  #about .wrapper {
+    grid-template-columns: 48rem 1fr;
+    grid-template-areas: 'B A';
+    gap: 6.7rem;
+  }
+
+  #about .cola-a {
+    align-self: center;
+  }
+
+  #about .content p {
+    margin-bottom: 0;
+  }
+}

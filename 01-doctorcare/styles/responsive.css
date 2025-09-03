@@ -10,6 +10,14 @@
     display: grid;
   }
 
+  .col-a {
+    grid-area: A;
+  }
+  
+  .col-b {
+    grid-area: B;
+  }
+
   section {
     padding-block: 16rem;
   }
