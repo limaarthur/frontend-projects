@@ -13,4 +13,9 @@
   section {
     padding-block: 16rem;
   }
+
+  section h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
 }
