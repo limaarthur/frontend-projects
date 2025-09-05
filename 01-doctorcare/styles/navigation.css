@@ -157,4 +157,42 @@ nav .close-menu {
     background-color: var(--brand-green-hover);
     border: none;
   }
+
+  /* Estilos para links ativos dentro de li */
+  nav#navigation .menu li a.active {
+    opacity: 1;
+    font-weight: 700;
+  }
+
+  nav#navigation .menu li a.active::after {
+    padding-inline: 0.8rem;
+    width: 100%;
+  }
+
+  /* Estado hover do botão */
+  nav#navigation .menu a.button:hover {
+    background-color: var(--brand-green);
+    border: none;
+    color: #FFFFFF;
+  }
+
+  nav#navigation.scroll .menu a.button:hover {
+    background-color: var(--brand-green-hover);
+    border: none;
+  }
+
+  /* Estado ativo do botão */
+  nav#navigation .menu a.button.active {
+    opacity: 1;
+    font-weight: 700;
+    background-color: var(--brand-green);
+    border: none;
+    color: #FFFFFF;
+  }
+
+  nav#navigation.scroll .menu a.button.active {
+    background-color: var(--brand-green-hover);
+    border: none;
+    color: #FFFFFF;
+  }
 }

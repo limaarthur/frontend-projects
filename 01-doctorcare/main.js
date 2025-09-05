@@ -3,10 +3,44 @@ const openMenuButton = document.querySelector('.open-menu')
 const closeMenuButton = document.querySelector('.close-menu')
 const backToTopButton = document.querySelector('#backToTopButton')
 
+// Seleciona todas as seções dentro do <main> que possuem um atributo id
+const sections = document.querySelectorAll('section[id]')
+
 function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
+
+  sections.forEach(section => {
+    activateMenuAtCurrentSection(section)
+  })
 }
+
+function activateMenuAtCurrentSection(section) {
+  const targetLine = scrollY + innerHeight / 2
+
+  // Verifica se a seção passou da linha
+  const sectionTop = section.offsetTop
+  const sectionHeight = section.offsetHeight
+  const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop
+
+  // Verefica se a base está abaixo da linha alvo
+  const sectionEndsAt = sectionTop + sectionHeight
+  const sectionEndPassedTargetline = sectionEndsAt <= targetLine
+
+  // Limites da seção
+  const sectionBoundaries = sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetline
+
+  const sectionId = section.getAttribute('id')
+  const menuElement = document.querySelector(`.menu a[href="#${sectionId}"]`)
+
+  if (!menuElement) return // evita erro se o link não for encontrado
+
+  menuElement.classList.remove('active')
+  if (sectionBoundaries) {
+    menuElement.classList.add('active')
+  }
+}
+/* Até aqui */
 
 function showNavOnScroll() {
   if (window.scrollY > 0) {
