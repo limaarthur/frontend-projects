@@ -17,5 +17,9 @@ const sendForm = (event) => {
   const question = questionInput.value
 
   console.log({ apiKey, game, question })
+
+  if () {
+
+  }
 }
 form.addEventListener('submit', sendForm) // Adiciona um ouvinte de evento para interceptar o envio do formulário
